@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2122ac36-150b-48fb-a01d-54f417945796" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/logistics-tracker-agent-filecoin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="0250bbed-93d2-44a6-9b6f-688c92737d5c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shipments.json" beforeDir="false" afterPath="$PROJECT_DIR$/shipments.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supply_chain/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/supply_chain/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supply_chain/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/supply_chain/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trackings/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/trackings/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trackings/management/command/generate_shipments.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,21 +21,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
-  <component name="ProjectId" id="2unKfsC8bVEPZD0FWKqMlagHKiv" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2unkwzT4CbZxSHv4GwU1fnRlcRq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -46,11 +46,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2122ac36-150b-48fb-a01d-54f417945796" name="Changes" comment="" />
-      <created>1742879008208</created>
+      <changelist id="0250bbed-93d2-44a6-9b6f-688c92737d5c" name="Changes" comment="" />
+      <created>1742891973234</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1742879008208</updated>
+      <updated>1742891973234</updated>
     </task>
     <servers />
   </component>

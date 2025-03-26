@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #Local Apps
-    'trackings.apps.TrackingsConfig',
+    'delivery.apps.DeliveryConfig',
 
     #Third Party Apps
     'rest_framework',

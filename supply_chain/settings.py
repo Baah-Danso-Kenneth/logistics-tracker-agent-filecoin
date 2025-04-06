@@ -17,7 +17,7 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
+# Quick-start development settings - unsuitable for productionanswert
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+LIGHT_HOUSE_API_KEY = config('LIGHT_HOUSE_API_KEY')
 # Application definition
 
 INSTALLED_APPS = [
@@ -118,7 +118,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+LIGHT_HOUSE_MODEL_CID = config('LIGHT_HOUSE_MODEL_CID',None)
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 

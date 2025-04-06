@@ -7,6 +7,7 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.metrics import mean_absolute_error, r2_score
 from sklearn.preprocessing import StandardScaler
 from xgboost import XGBRegressor
+from .lighthouse_manager import LighthouseManager
 
 
 class Command(BaseCommand):
@@ -15,7 +16,6 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         self.stdout.write(self.style.WARNING("📊 Starting model training..."))
 
-        # Load cleaned data
         file_path = "cleaned_data.json"
         with open(file_path, "r", encoding="utf-8") as json_file:
             data = json.load(json_file)
@@ -45,15 +45,12 @@ class Command(BaseCommand):
             ])
             y.append(item["delivery_time"])
 
-        # Convert to numpy arrays
         X = np.array(X)
         y = np.array(y)
 
-        # Clip outliers in target variable
         lower_bound, upper_bound = np.percentile(y, [1, 99])
         y = np.clip(y, lower_bound, upper_bound)
 
-        # Scale features
         scaler = StandardScaler()
         X = scaler.fit_transform(X)
 
@@ -70,7 +67,6 @@ class Command(BaseCommand):
         grid_search.fit(X_train, y_train)
         best_rf = grid_search.best_estimator_
 
-        # Train Gradient Boosting and XGBoost
         gb = GradientBoostingRegressor(n_estimators=200, max_depth=10, random_state=42)
         gb.fit(X_train, y_train)
 
@@ -87,5 +83,16 @@ class Command(BaseCommand):
         best_model = max(models.items(), key=lambda x: r2_score(y_test, x[1].predict(X_test)))[1]
         model_path = "trained_model.pkl"
         joblib.dump(best_model, model_path)
+
+        lighthouse = LighthouseManager()
+
+        try:
+            cid = lighthouse.upload_model(model_path)
+            if cid:
+                self.stdout.write(self.style.SUCCESS(f"Model uploaded"))
+            else:
+                self.stdout.write(self.style.ERROR("X upload to Lighthouse"))
+        except Exception as e:
+            self.stdout.write(self.style.ERROR(f"X upload error: {str(e)}"))
 
         self.stdout.write(self.style.SUCCESS(f"💾 Best Model saved as {model_path}"))

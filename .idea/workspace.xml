@@ -6,27 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0250bbed-93d2-44a6-9b6f-688c92737d5c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shipments.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shipments_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shipments_filled.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shipments_with_missing.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/management/commands/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/management/commands/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/management/commands/train_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/management/commands/train_models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/supply_chain/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/supply_chain/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supply_chain/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/supply_chain/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/management/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/management/commands/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/management/commands/export_shipments.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/management/commands/feature_engineering.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/management/commands/filling_missing_values.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/management/commands/generate_shipments.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/management/commands/introduce_missing_values.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackings/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trained_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/trained_model.pkl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
